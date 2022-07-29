@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="/javascript/easy-number-separator.js"></script>
+    <title>Belajar</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding-left: 5px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Belajar Logic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Pattern Tangga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pyramid">Pattern Piramida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/investasi">Kalkulator Investasi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="padding-left: 25px;">
+        <br>
+        <h4>Kalkulator Target Investasi</h4> <br>
+        <div></div>
+        <label for="targetDana" class="form-label">Target Dana Terkumpul</label>
+        <div class="input-group mb-3" style="width: 20%;">
+            <span class="input-group-text" id="basic-addon3">Rp.</span>
+            <input type="number" class="form-control" id="targetDana" aria-describedby="basic-addon3">
+        </div>
+        <label for="tahun" class="form-label">Berapa Tahun Lagi</label>
+        <div class="input-group mb-3" style="width: 11.6%;">
+            <input type="number" class="form-control" id="tahun" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">tahun</span>
+        </div>
+        <label for="returnInv" class="form-label">Ekspektasi Return Investasi (per tahun)</label>
+        <div class="input-group mb-3" style="width: 10%;">
+            <input type="number" class="form-control" id="returnInv" placeholder="~ (> 6)" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">%</span>
+        </div>
+        <!-- <label for="awalDana" class="form-label">Dana Awal (yang telah terkumpul)</label>
+        <div class="input-group mb-3" style="width: 20%;">
+            <span class="input-group-text" id="basic-addon3">Rp.</span>
+            <input type="number" class="form-control" id="awalDana" aria-describedby="basic-addon3">
+        </div> -->
+        <label for="inflasi" class="form-label">Estimasi Inflasi (per tahun)</label>
+        <div class="input-group mb-3" style="width: 9%;">
+            <input type="number" class="form-control" placeholder="~ 3.5" id="inflasi" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">%</span>
+        </div>
+
+
+        <br>
+        <button type="button" class="btn btn-secondary" id="btn" style="font-weight: 600; width: 5%;">Run</button>
+        <br> <br>
+        <div id="pattern" style="padding-left: 15px; font-weight: 600;"></div>
+        <br> <br>
+        <div id="hasil">-</div>
+    </div>
+
+    <!-- <h1>It Works!</h1> -->
+
+    <script src="/javascript/investasi.js"></script>
+
+
+
+</body>
+
+</html>
